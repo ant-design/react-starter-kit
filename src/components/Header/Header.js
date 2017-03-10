@@ -9,6 +9,7 @@
 
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import { Button } from 'antd';
 import s from './Header.css';
 import Link from '../Link';
 import Navigation from '../Navigation';
@@ -28,6 +29,7 @@ class Header extends React.Component {
           <div className={s.banner}>
             <h1 className={s.bannerTitle}>React</h1>
             <p className={s.bannerDesc}>Complex web apps made easy</p>
+            <Button type="primary">Button</Button>
           </div>
         </div>
       </div>
