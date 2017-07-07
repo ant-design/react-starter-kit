@@ -76,10 +76,10 @@ const config = {
           ],
         },
       },
-      // trun off css-modules on antd css files
+      // turn off css-modules on antd css files
       {
         test: /\.css$/,
-        include: [/node_modules\/.*antd/],
+        include: [/node_modules[/\\].*antd/],
         use: [
           {
             loader: 'style-loader',
@@ -97,7 +97,7 @@ const config = {
       },
       {
         test: /\.css/,
-        exclude: [/node_modules\/.*antd/],
+        exclude: [/node_modules[/\\].*antd/],
         use: [
           {
             loader: 'isomorphic-style-loader',
